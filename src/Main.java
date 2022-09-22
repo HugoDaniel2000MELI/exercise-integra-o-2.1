@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        String cidade[] = {"São Paulo","Nova York", "Rio de Janeiro"};
-        int temperatura[][]= {{28, 32}, {23, 30}, {20, 28}};
+        String cidades[] = {"Londres", "Madrid", "Nova York", "Buenos Aires", "Assunción", "São Paulo", "Lima", "Santiago de Chile", "Lisboa", "Tokio"};
+        int[][] temperatura = {{-2, 33}, {-3, 32}, {-8, 27}, {4, 37}, {6, 42}, {5, 43}, {0, 39}, {-7, 26}, {-1, 31}, {-10, 35}};
         int maiorTemperatura = 0;
         int menorTemperatura = 1000;
         int indMaiorTemperatura = 0;
@@ -22,7 +22,7 @@ public class Main {
                 }
             }
         }
-        System.out.println("Cidade com maior temperatura:" + cidade[indMaiorTemperatura] + " - " + maiorTemperatura);
-        System.out.println("Cidade com menor temperatura:" + cidade[indMenorTemperatura] + " - " + menorTemperatura);
+        System.out.println("Cidade com maior temperatura : " + cidades[indMaiorTemperatura] + " = " + maiorTemperatura + "° celsius");
+        System.out.println("Cidade com menor temperatura :" + cidades[indMenorTemperatura] + " = " + menorTemperatura + "° celsius");
     }
 }
